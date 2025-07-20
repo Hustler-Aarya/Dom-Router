@@ -10,6 +10,7 @@ import { createBrowserRouter, createRoutesFromElements, RouterProvider, Routes }
 import Contact from './components/contact/Contact.jsx';
 import More from './components/More/More.jsx';
 import Github from './components/github/Github.jsx';
+import User from './components/User/User.jsx';
 
 
 
@@ -45,7 +46,9 @@ const router=createBrowserRouter(
       <Route path='about' element={<Aboutus />} />
       <Route path='contact' element={<Contact />} />
       <Route path='more' element={<More />} />
-      <Route path='github' element={<Github />} />
+      <Route path='github' element={<Github />} />  
+      <Route path='user/:userid' element={<User />} />  
+      
     </Route>
   )
 )
